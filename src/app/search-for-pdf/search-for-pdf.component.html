@@ -1,0 +1,41 @@
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+        <div class="md-form">
+          <input type="text" [(ngModel)]="searchText" (change)="searchItems()" class="form-control" id="search" mdbInput>
+          <label for="search">Search</label>
+        </div>
+      </div>
+    </div>
+    <td  style="width: 30%">
+
+    <table mdbTable class="z-depth-1">
+      
+      <tbody>
+      <tr *ngFor="let el of filterUser; let i = index" (click)="onSelect(el.id)">
+          <th scope="row" >{{el.name}}</th>
+        </tr>
+      </tbody>
+    </table>
+</td>
+<td style="width: 20%"></td>
+<td id="pdf">
+      <table mdbTable class="z-depth-1">
+          <!-- <thead>
+              <tr>
+                <th  scope="col" >NAME
+                </th>
+              </tr>
+              </thead> -->
+        <tbody>
+        <tr *ngFor="let el of shoepdf; let i = index"  (click)="checked($event,el.url)">
+          <th scope="row" >{{el.date}}</th>
+        </tr>
+        </tbody>
+      </table>
+</td>
+</div>
+
+
+  

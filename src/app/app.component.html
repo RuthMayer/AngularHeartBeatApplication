@@ -1,0 +1,173 @@
+<div>
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+         <div class="brand"><i class="far fa-heart fa-4x"></i>
+            <a id="heartbeat" target='_blank'> H e a r t B e a t</a> </div>
+        <!-- Copyright -->
+
+      </footer>
+      <!-- Footer -->
+<mdb-navbar id="nav" SideClass="navbar navbar-expand-lg navbar-dark black ie-nav" [containerInside]="false">
+
+    <mdb-navbar-brand>
+            <!-- <img src="unnamed.png"> -->
+
+        <a class="logo navbar-brand" href="#"></a>
+    </mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active waves-light" mdbWavesEffect>
+                    <a class="nav-link" [routerLink]="['/']" > <mdb-icon fas icon="heartbeat"> <span class="sr-only">(current)</span></mdb-icon></a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a  class="nav-link" [routerLink]="['/priority']">Priority</a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a  class="nav-link" [routerLink]="['/search']" >Search Patient</a> 
+                       </li>
+
+        </ul>
+      
+    </links>
+</mdb-navbar>
+<!-- Main -->
+<main id="container">
+    <div class="container" style="height:1500px;">
+        <div class="row pt-5">
+            <div class="col text-center">
+              
+                <router-outlet></router-outlet>
+
+            </div>
+        </div>
+    </div>
+</main>
+<!-- <router-outlet></router-outlet> -->
+
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+      
+          <!-- Footer links -->
+          <div class="row text-center text-md-left mt-3 pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Heart Beat</h6>
+              <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                consectetur
+                adipisicing elit.</p>
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="w-100 clearfix d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+              <p>
+                <a href="#!">DialogFlow</a>
+              </p>
+              <p>
+                <a href="#!">NodeJs</a>
+              </p>
+              <p>
+                <a href="#!">Angular</a>
+              </p>
+              <p>
+                <a href="#!">MySql</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="w-100 clearfix d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+              <p>
+                <a href="#!">Your Account</a>
+              </p>
+              <p>
+                <a href="#!">Become an Affiliate</a>
+              </p>
+              <p>
+                <a href="#!">Shipping Rates</a>
+              </p>
+              <p>
+                <a href="#!">Help</a>
+              </p>
+            </div>
+      
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p>
+                <i class="fas fa-home mr-3"></i> Tel Aviv, Israel</p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> myheartapplication@gmail.com</p>
+              <p>
+                <i class="fas fa-phone mr-3"></i> + 972 548 431 632</p>
+                <p>
+                  <i class="fas fa-phone mr-3"></i> + 972 548 431 632</p>
+                  <p>
+                    <i class="fas fa-phone mr-3"></i> + 972 548 431 632</p>
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Footer links -->
+      
+          <hr>
+      
+          <!-- Grid row -->
+          <div class="row d-flex align-items-center">
+      
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8">
+      
+              <!--Copyright-->
+              <p class="text-center text-md-left">© Sep 2019 Copyright:
+                <a href="https://lh3.googleusercontent.com/-Ih_h0eaK1lo/XYdpMiwR8BI/AAAAAAAACnI/4nDKdQRAlT08Nb9yaeIDefpotay9z6LjQCK8BGAsYHg/s0/2019-09-22.png">
+                  <strong> HeartBeat.com</strong>
+                </a>
+              </p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0">
+      
+              <!-- Social buttons -->
+              <div class="text-center text-md-right">
+                  <div class="text-center">
+                      <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><a class="btn-floating btn-sm btn-fb mx-1"><i class="fab fa-facebook"> </i></a></li>
+                        <li class="list-inline-item"><a class="btn-floating btn-sm btn-tw mx-1"><i class="fab fa-twitter"> </i></a></li>
+                        <li class="list-inline-item"><a class="btn-floating btn-sm btn-gplus mx-1"><i class="fab fa-google-plus"> </i></a></li>
+                        <li class="list-inline-item"><a class="btn-floating btn-sm btn-li mx-1"><i class="fab fa-linkedin-in"> </i></a></li>
+                        <li class="list-inline-item"><a class="btn-floating btn-sm btn-dribbble mx-1"><i class="fab fa-dribbble"> </i></a></li>
+                      </ul>
+                    </div>
+              </div>
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+      </footer>
+      <!-- Footer -->
+<!-- /.Main -->
+    <!-- <button class="btn-outlined hidden-md" id="hide"><a [routerLink]="['/priority']">Priority</a></button>
+    <button class="btn-outlined hidden-md" id="show"><a [routerLink]="['/search']" >Search Patient</a></button> -->
+

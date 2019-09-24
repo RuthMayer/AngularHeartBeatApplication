@@ -1,0 +1,47 @@
+<!-- <mat-progress-bar mode="determinate" value="40"></mat-progress-bar> -->
+<div class="container">
+        <table mdbTable class="z-depth-1">
+          <thead class="white black-text">
+          <tr>
+            <!-- <th  scope="col">
+            </th> -->
+            <th scope="col" ><mdb-icon fas icon="user" style="color: black"></mdb-icon></th>
+            <th scope="col" ><i class="fas fa-calendar-alt"style="color: black"></i></th>
+            <th scope="col" ><i class="fas fa-bookmark" style="color: black"></i></th>
+            <th scope="col" ><mdb-icon fas icon="check-circle" class="check"style="color: black"></mdb-icon></th>
+            <th scope="col" ><i class="fas fa-eye"style="color: black"></i></th>
+
+          </tr>
+          </thead>
+          <tbody>
+            <!-- ----try-- -->
+              <!-- <tr >
+                  <td >name</td>
+                  <td>date</td>
+                  <td>
+                  
+                      <ngb-progressbar type="danger" [value]="100"></ngb-progressbar>
+                    </td>
+                  <td  (click)="update(el.id)"> <button type="button" class="btn btn-light"> <i class="far fa-check-circle"></i></button>
+            
+                  </td> 
+                  <td  (click)="checked(el.url)"> <button type="button" class="btn btn-light"> <i class="far fa-eye"></i></button>
+            
+                  </td>
+                </tr>    -->
+                       
+            <!-- ----try-- -->
+          <tr *ngFor="let el of allUser; let i = index" [id]="el.url" >
+            <td >{{el.name}}</td>
+            <td>{{el.date}}</td>
+            <td>                      <ngb-progressbar type="danger" [value]="el.score"></ngb-progressbar>
+            </td>
+            <td  (click)="update(el.id)"> <button type="button" class="btn btn-light"> <i class="far fa-check-circle"></i></button>
+            
+            </td> 
+            <td  (click)="checked(el.url)"> <button type="button" class="btn btn-light"> <i class="far fa-eye"></i></button>
+      
+            </td>          </tr>
+          </tbody>
+        </table>
+      </div>

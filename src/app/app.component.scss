@@ -1,0 +1,35 @@
+ul{
+position: -webkit-sticky; /* Safari */
+position: sticky;
+}
+.card[_ngcontent-vsq-c2] {
+    box-shadow: 0 2px 50px 0 black, 0 12px 20px 0 black;
+    font-weight: 200;
+    width: 70%;
+    align-content: center;
+    max-height: 70em;
+    text-align: center;
+    direction: inherit;
+    margin-left: 15%;
+}
+
+.mdb-color.lighten-3 {
+    background-color: black !important;
+    text-align: center;
+
+}
+#heartbeat{
+    font-size: 300%;
+    font-weight: 100%;
+}
+.mdb-color {
+    background-color: black !important;
+}
+main{
+    display: block;
+    background-color: black;
+    background-image:url("81110.jpg") ;
+    opacity: 0.88;
+    background-repeat: no-repeat;
+background-size: 100%;
+}

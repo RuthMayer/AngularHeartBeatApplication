@@ -1,0 +1,64 @@
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color:red;
+    transition: width 0.6s ease;
+}
+// .z-depth-1{
+//     border: 1px solid white;
+//     border-radius: 13px;
+//     border-spacing: 0;
+//     }
+.check{
+width:40px;
+}
+table.table thead th {
+    border-top: none;
+    color: white;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color:white;
+  //  background-color: white;
+}
+
+td.apU>.T-KT.aXw::before {
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/star_border_black_20dp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    opacity: .16;
+}
+
+.aXw.T-KT:before {
+    content: '';
+    content: -webkit-image-set('' 1x,'' 2x);
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+a.waves-effect, a.waves-light {
+    display: inline-block;
+}
+.btn{
+    padding: 0;
+
+}
+// tr{
+//     background-color: white;
+//     opacity: 0.2;
+// }
+// td{
+//     color: white;
+// }
+.white black-text{
+    color: black;
+}
